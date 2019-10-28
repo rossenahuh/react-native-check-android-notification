@@ -37,9 +37,4 @@ public class CheckAndroidNotificationModule extends ReactContextBaseJavaModule {
     public void checkNotifications(final Promise promise) {
         promise.resolve(internalCheckNotifications());
     }
-
-    @ReactMethod
-    public void requestNotifications(ReadableArray options, final Promise promise) {
-        promise.resolve(internalCheckNotifications());
-    }
 }
